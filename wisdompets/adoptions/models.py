@@ -13,6 +13,6 @@ class Pet(models.Model):
     age = models.IntegerField(null=True)
     vaccinations = models.ManyToManyField('Vaccine', blank=True)
 
-class Vaccines(models.Model):
+class Vaccine(models.Model):
     name = models.CharField(max_length=50)
 
